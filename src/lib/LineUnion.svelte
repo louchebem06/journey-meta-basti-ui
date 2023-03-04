@@ -8,15 +8,15 @@
 	.line {
 		position: absolute;
 		left: 0;
-		bottom: 30%;
+		bottom: 25%;
 		z-index: 1;
 		display: flex;
 		width: 100%;
-		background-color: red;
+		justify-content: center;
 	}
 
 	.line img {
-		width: 10%;
-		opacity: 50%;
+		width: 12%;
+		opacity: 0.25;
 	}
 </style>
