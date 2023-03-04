@@ -4,8 +4,10 @@
 </script>
 
 <div class="icon">
-	<!-- svelte-ignore a11y-img-redundant-alt -->
-	<img {src} alt="icon picture" />
+	<div class="img">
+		<!-- svelte-ignore a11y-img-redundant-alt -->
+		<img {src} alt="icon picture" />
+	</div>
 	<p>{text}</p>
 </div>
 
@@ -13,8 +15,18 @@
 	.icon {
 		display: flex;
 		flex-direction: column;
-		max-width: 155px;
+		width: 155px;
 		gap: 18px;
+	}
+
+	.icon img {
+		max-height: 100%;
+	}
+
+	.img {
+		height: 112px;
+		width: 100%;
+		text-align: center;
 	}
 
 	.icon p {
