@@ -56,7 +56,7 @@
 	.content {
 		position: absolute;
 		bottom: 340px;
-		left: 25%;
+		left: 10%;
 		max-width: 379px;
 		display: flex;
 		flex-direction: column;

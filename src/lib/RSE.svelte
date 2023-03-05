@@ -23,11 +23,11 @@
 
 <style>
 	.block {
-		margin: 30vw auto 54px auto;
+		margin: 15vw auto 54px auto;
 		max-width: 720px;
 		font-style: normal;
 		color: #FFFFFF;
-		min-height: 100vh;
+		/* min-height: 100vh; */
 	}
 
 	.icon {

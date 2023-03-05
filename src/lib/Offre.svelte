@@ -57,6 +57,9 @@
 		display: flex;
 		gap: 8px;
 		z-index: 10;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.product h1 {

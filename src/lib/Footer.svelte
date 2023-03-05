@@ -44,6 +44,8 @@
 		position: absolute;
 		bottom: 0;
 		left: 0;
+		flex-wrap: wrap;
+		gap: 100px;
 	}
 
 	footer p, footer p a {
@@ -65,5 +67,18 @@
 		bottom: 10%;
 		left: 50%;
 		transform: translateX(-3%);
+	}
+
+	@media screen and (max-width: 700px) {
+		footer {
+			margin-top: 0;
+		}
+
+		.footer {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 20px;
+		}
 	}
 </style>
