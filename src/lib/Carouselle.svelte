@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import Button from "./Button.svelte";
 
 	let scrolling: any;
@@ -11,6 +12,15 @@
 			e.srcElement.style.scrollBehavior = "smooth";
 		}
 	}
+
+	function scollingAnimation() {
+		scrolling.scrollBy(10,0);
+		setTimeout(scollingAnimation, 40);
+	}
+
+	onMount(() => {
+		scollingAnimation();
+	})
 </script>
 
 <div class="carouselle">
@@ -29,10 +39,10 @@
 		</span>
 	</div>
 	<div bind:this={scrolling} on:scroll={scroll} class="scrolling">
-		<img src="/img/scrolling/variant1.png" alt="" />
-		<img src="/img/scrolling/variant2.png" alt="" />
-		<img src="/img/scrolling/variant3.png" alt="" />
-		<img src="/img/scrolling/variant4.png" alt="" />
+		<img draggable="false" src="/img/scrolling/variant1.png" alt="" />
+		<img draggable="false" src="/img/scrolling/variant2.png" alt="" />
+		<img draggable="false" src="/img/scrolling/variant3.png" alt="" />
+		<img draggable="false" src="/img/scrolling/variant4.png" alt="" />
 	</div>
 </div>
 
@@ -46,9 +56,8 @@
 	.content {
 		position: absolute;
 		bottom: 340px;
-		left: 50%;
+		left: 25%;
 		max-width: 379px;
-		transform: translateX(-150%);
 		display: flex;
 		flex-direction: column;
 		gap: 16px;
@@ -74,7 +83,7 @@
 	.scrolling {
 		-webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 50%);
 		display: flex;
-		overflow-x: scroll;
+		overflow-x: hidden;
 		scroll-behavior: smooth;
 		margin-left: 18%;
 	}
