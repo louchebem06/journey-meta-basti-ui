@@ -6,7 +6,7 @@
 <div class="icon">
 	<div class="img">
 		<!-- svelte-ignore a11y-img-redundant-alt -->
-		<img {src} alt="icon picture" />
+		<img draggable="false" {src} alt="icon picture" />
 	</div>
 	<p>{text}</p>
 </div>

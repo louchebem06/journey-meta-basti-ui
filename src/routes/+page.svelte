@@ -3,6 +3,9 @@
 	import Hero from "$lib/Hero.svelte";
 	import Presentation from "$lib/Presentation.svelte";
 	import Rse from "$lib/RSE.svelte";
+	import Decoration from "$lib/Decoration.svelte";
+	import Carouselle from "$lib/Carouselle.svelte";
+	import Offre from "$lib/Offre.svelte";
 </script>
 
 <svelte:head>
@@ -13,3 +16,6 @@
 <Hero />
 <Presentation />
 <Rse />
+<Decoration />
+<Carouselle />
+<Offre />
