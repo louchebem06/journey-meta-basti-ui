@@ -23,10 +23,11 @@
 
 <style>
 	.block {
-		margin: 127px auto 54px auto;
+		margin: 30vw auto 54px auto;
 		max-width: 720px;
 		font-style: normal;
 		color: #FFFFFF;
+		min-height: 100vh;
 	}
 
 	.icon {
@@ -50,5 +51,30 @@
 		font-size: 14px;
 		line-height: 21px;
 		margin-bottom: 69px;
+	}
+
+	@media screen and (max-width: 768px) {
+		.block {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin: 10% auto;
+			width: 90vw;
+			min-height: 0;
+			gap: 30px;
+		}
+
+		.block p {
+			margin-bottom: 0;
+		}
+
+		.block h1 {
+			margin-bottom: 0;
+		}
+
+		.icon {
+			flex-wrap: wrap;
+		}
 	}
 </style>

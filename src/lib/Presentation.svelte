@@ -44,7 +44,7 @@
 
 <style>
 	.presentation {
-		min-height: 100vh;
+		min-height: calc(100vh);
 		font-style: normal;
 		color: #FFFFFF;
 		display: flex;
@@ -124,9 +124,10 @@
 
 	@media screen and (max-width: 768px) {
 		.presentation {
-			justify-content: space-between;
-			margin-left: 0;
-			padding-left: 5%;
+			flex-direction: column-reverse;
+			justify-content: center;
+			width: 90vw;
+			margin: auto;
 		}
 		.presentation img {
 			width: 50vw;
@@ -138,23 +139,12 @@
 
 		.chat {
 			max-width: 400px;
-			width: 100vw;
+			position: relative;
+			width: 90vw;
 		}
 
 		.row {
 			transform: translateX(-5%);
-		}
-	}
-
-	@media screen and (max-width: 425px) {
-		.presentation {
-			flex-direction: column-reverse;
-			justify-content: center;
-		}
-
-		.chat {
-			position: relative;
-			width: 90vw;
 		}
 	}
 </style>
