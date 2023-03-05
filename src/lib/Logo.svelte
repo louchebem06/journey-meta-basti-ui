@@ -9,6 +9,7 @@
 		align-items: center;
 		gap: 16px;
 		max-width: 126px;
+		z-index: 1;
 	}
 
 	.logo img {

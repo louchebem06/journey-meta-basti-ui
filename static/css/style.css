@@ -8,4 +8,5 @@
 
 body {
 	background: linear-gradient(180deg, #E2563F 18.72%, #9360FF 62.34%);
+	min-height: 100vh;
 }
