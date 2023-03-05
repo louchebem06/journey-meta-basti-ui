@@ -6,6 +6,7 @@
 	import Decoration from "$lib/Decoration.svelte";
 	import Carouselle from "$lib/Carouselle.svelte";
 	import Offre from "$lib/Offre.svelte";
+	import Footer from "$lib/Footer.svelte";
 </script>
 
 <svelte:head>
@@ -19,3 +20,4 @@
 <Decoration />
 <Carouselle />
 <Offre />
+<Footer />

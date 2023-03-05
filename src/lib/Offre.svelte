@@ -50,11 +50,13 @@
 		align-items: center;
 		padding-bottom: 168px;
 		gap: 45px;
+		background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
 	}
 
 	.product span {
 		display: flex;
 		gap: 8px;
+		z-index: 10;
 	}
 
 	.product h1 {
