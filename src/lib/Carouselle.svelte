@@ -1,5 +1,16 @@
 <script lang="ts">
 	import Button from "./Button.svelte";
+
+	let scrolling: any;
+	function scroll(e: any) {
+		const firstChild = e.srcElement.children[0];
+		if (firstChild.width <= e.srcElement.scrollLeft) {
+			e.srcElement.appendChild(firstChild);
+			e.srcElement.style.scrollBehavior = "initial";
+			e.srcElement.scroll(0, 0);
+			e.srcElement.style.scrollBehavior = "smooth";
+		}
+	}
 </script>
 
 <div class="carouselle">
@@ -17,7 +28,7 @@
 			<Button border>découvrir les destinations</Button>
 		</span>
 	</div>
-	<div class="scrolling">
+	<div bind:this={scrolling} on:scroll={scroll} class="scrolling">
 		<img src="/img/scrolling/variant1.png" alt="" />
 		<img src="/img/scrolling/variant2.png" alt="" />
 		<img src="/img/scrolling/variant3.png" alt="" />
