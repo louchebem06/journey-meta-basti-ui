@@ -1,7 +1,7 @@
 <script>
   import RowUnion from "./RowUnion.svelte";
-
 </script>
+
 <div class="presentation">
 	<div class="content">
 		<div class="text">
