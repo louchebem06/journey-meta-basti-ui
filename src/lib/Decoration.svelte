@@ -12,6 +12,7 @@
 <style>
 	img {
 		max-width: 100%;
+		-webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 33.16%, #000000 57.64%, rgba(0, 0, 0, 0) 100%);
 	}
 
 	.decoration {
@@ -21,7 +22,7 @@
 	.row {
 		position: absolute;
 		left: 50%;
-		top: 92%;
+		top: 85%;
 		transform: translateX(-9%);
 	}
 

@@ -19,6 +19,10 @@
 		overflow: hidden;
 	}
 
+	.hero img {
+		-webkit-mask-image: linear-gradient(180deg, #000000 74%, rgba(0, 0, 0, 0) 100%);
+	}
+
 	.hero img:nth-child(1) {
 		width: 100%;
 	}
